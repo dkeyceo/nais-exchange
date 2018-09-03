@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.time.LocalDate;
 
 
 @XmlRootElement
@@ -24,7 +25,7 @@ public class Car {
     @Column(name="N_INZ_NEW")
     private String nInzNew;
     @Column(name="D_REG")
-    private String dReg;
+    private LocalDate dReg;
     @Column(name="NEW_CERT")
     private String newCert;
     @Column(name="BRAND")
@@ -132,11 +133,11 @@ public class Car {
         this.nInzNew = nInzNew;
     }
 
-    public String getdReg() {
+    public LocalDate getdReg() {
         return dReg;
     }
 
-    public void setdReg(String dReg) {
+    public void setdReg(LocalDate dReg) {
         this.dReg = dReg;
     }
 
